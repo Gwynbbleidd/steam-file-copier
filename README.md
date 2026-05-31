@@ -1,42 +1,42 @@
 # Steam File Copier
 
-Простая утилита для копирования `.lua` и `.manifest` файлов в папки Steam.
+A simple utility for copying `.lua` and `.manifest` files into Steam folders.
 
-## 📋 Назначение
+## 📋 Purpose
 
-Автоматически сортирует и копирует:
-- `.lua` файлы → `C:\Program Files (x86)\Steam\config\stplug-in`
-- `.manifest` файлы → `C:\Program Files (x86)\Steam\depotcache`
+Automatically sorts and copies:
+- `.lua` files → `C:\Program Files (x86)\Steam\config\stplug-in`
+- `.manifest` files → `C:\Program Files (x86)\Steam\depotcache`
 
-Полезно для различных "кряков" и модификаций Steam-клиента.
+Useful for various Steam client cracks and modifications.
 
-## 🚀 Использование
+## 🚀 Usage
 
-1. Скачайте **SteamFileCopier.exe** из раздела [Releases](https://github.com/ТВОЙ_ЛОГИН/steam-file-copier/releases)
-2. Запустите двойным кликом
-3. Укажите исходную папку с файлами
-4. Нажмите **«Начать копирование»**
+1. Download **SteamFileCopier.exe** from the [Releases](https://github.com/Gwynbbleidd/steam-file-copier/releases) section
+2. Run it with a double click
+3. Select the source folder with your files
+4. Click **"Start Copying"**
 
-> **Важно:** Для копирования в `Program Files` может потребоваться запуск от имени администратора.
+> **Note:** Copying to `Program Files` may require running as Administrator.
 
-## 🔧 Возможности
+## 🔧 Features
 
-- Выбор исходной папки и папок назначения
-- Пропуск дубликатов (не перезаписывает существующие файлы)
-- Рекурсивный поиск файлов во всех подпапках
-- Лог-бокс с отображением процесса
-- Прогресс-бар
+- Custom source and destination folder selection
+- Duplicate skipping (does not overwrite existing files)
+- Recursive file search across all subfolders
+- Log box showing the copying process
+- Progress bar
 
-## 🛠 Сборка из исходников
+## 🛠 Building from Source
 
-Требуется: .NET Framework 4.x (установлен в Windows по умолчанию)
+Requires: .NET Framework 4.x (included with Windows by default)
 
 ```cmd
 csc.exe /target:winexe /reference:System.Windows.Forms.dll /reference:System.Drawing.dll /out:release\SteamFileCopier.exe src\SteamFileCopier.cs
 ```
 
-Или откройте `src\SteamFileCopier.cs` в Visual Studio / SharpDevelop и соберите проект.
+Or open `src\SteamFileCopier.cs` in Visual Studio / SharpDevelop and build the project.
 
-## 📄 Лицензия
+## 📄 License
 
-MIT License — можно использовать, изменять и распространять свободно.
+MIT License — free to use, modify, and distribute.
