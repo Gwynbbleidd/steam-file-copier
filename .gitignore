@@ -1,0 +1,11 @@
+# Build artifacts (from other compilers)
+*.user
+*.suo
+*.obj
+*.pdb
+*.cache
+*.log
+
+# Windows
+Thumbs.db
+Desktop.ini
